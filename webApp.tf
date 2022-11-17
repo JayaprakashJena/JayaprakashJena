@@ -26,13 +26,13 @@ resource "azurerm_service_plan" "AppServicePlan" {
   os_type             = "Windows"
 }
 
-resource "azurerm_windows_web_app" "WebApp01" {
-  name                = "WinApp01"
-  resource_group_name = azurerm_resource_group.res-Jay.name
-  location            = azurerm_service_plan.AppServicePlan.location
-  service_plan_id     = azurerm_service_plan.AppServicePlan.id
+# resource "azurerm_windows_web_app" "WebApp01" {
+#   name                = "WinApp01"
+#   resource_group_name = azurerm_resource_group.res-Jay.name
+#   location            = azurerm_service_plan.AppServicePlan.location
+#   service_plan_id     = azurerm_service_plan.AppServicePlan.id
 
 
 
-  site_config {}
-}
+#   site_config {}
+# }
